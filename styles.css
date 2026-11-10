@@ -1,0 +1,9 @@
+/* Efecto hover sobre las tarjetas de color de Bootstrap */
+.tarjeta-color {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.tarjeta-color:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
