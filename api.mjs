@@ -3,7 +3,7 @@ export async function pedirPaletaAPI(colorIngresado) {
   const colorCodificado = encodeURIComponent(colorLimpio);
 
   // Consulta a nuestro propio backend Express
-  const respuesta = await fetch(`http://localhost:3000/api/paleta?color=${colorCodificado}`);
+  const respuesta = await fetch(`https://paleta-colores.onrender.com/api/paleta?color=${colorCodificado}`);
 
   // Validar respuesta.ok explícitamente
   if (respuesta.ok === false) {
